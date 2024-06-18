@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ContaBancaria {
     public static void main(String[] args) throws Exception {
-        double saldoCliente =0;
+        double saldoCliente =0.00;
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         
@@ -18,13 +18,13 @@ public class ContaBancaria {
         System.out.println("Favor informar o número de sua conta bancária: ");
         String numeroConta = scanner.next();
 
-        System.out.println("Favor seu nome completo (sem abreviações):");
-        String nomeCompletoCliente = scanner.next();
+        System.out.println("Favor seu nome completo (sem abreviações e todo junto1021):");
+        String nomeCliente = scanner.next();
 
         System.out.println("Favor informar a senha desejada, composta por 6 digitos:");
         int senhaCliente = scanner.nextInt();
 
-        System.out.println("Ola, " +nomeCompletoCliente + " Seja bem vindo ao banco X. Seu saldo atual é de: R$ " + saldoCliente);
+        System.out.println("Ola, " +nomeCliente + " Seja bem vindo ao banco X. Seu saldo atual é de: R$ " + saldoCliente);
 
     }
 }
